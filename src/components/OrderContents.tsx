@@ -22,7 +22,7 @@ export default function OrderContents({ order, removeItem }: OrderContentsProps)
                             >
                                 <div>
                                     <p className="text-lg">
-                                        {item.name} - ${formatCurrency(item.price)}
+                                        {item.name} - {formatCurrency(item.price)}
                                     </p>
                                     <p className="font-black">
                                         Cantidad: {item.quantity} - {formatCurrency(item.price * item.quantity)}
